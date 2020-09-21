@@ -1,5 +1,5 @@
 # HANGMAN-PYTHON
-A simple hangman game made with python and pygame
+A simple hangman game made with python and pygame by egomeister
 
 ### Requirements
 ```

@@ -55,7 +55,7 @@ def draw():
      
     window.fill(COLOR)  
     #draw title
-    text = TITLE_FONT.render("Developer HANGMAN", 1, BLACK)
+    text = TITLE_FONT.render("HANGMAN", 1, BLACK)
     window.blit(text, (WIDTH/2 - text.get_width()/2, 20))
     #draw word
     display_word = ""
