@@ -57,6 +57,7 @@ def draw():
     #draw title
     text = TITLE_FONT.render("HANGMAN", 1, BLACK)
     window.blit(text, (WIDTH/2 - text.get_width()/2, 20))
+    
     #draw word
     display_word = ""
     for letter in word:
@@ -67,15 +68,13 @@ def draw():
     text = WORD_FONT.render(display_word, 1, BLACK)
     window.blit(text, (400, 200))
     
-    
-    
-    
     #draw buttons
     for letter in letters:
         x, y, ltr, visible= letter
         
         if visible:
             pygame.draw.circle(window, BLACK, (x, y), RADIUS, 3)
+            
             #render the text
             text = LETTER_FONT.render(ltr, 1, BLACK)
             window.blit(text, (x - text.get_width()/2, y - text.get_width()/2))
@@ -119,7 +118,7 @@ def main():
                     x, y, ltr, visible = letter
                     dist = math.sqrt((x - m_x)**2 + (y - m_y)**2)
                     if dist < RADIUS:
-                        #why 3 ? because in the list, the 3rd item contains the alphabet
+                        #why 3 ? because in the list, the 3rd item contains the visible variable
                         letter[3] = False
                         guessed.append(ltr)
                         if ltr not in word:
