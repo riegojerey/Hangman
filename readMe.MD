@@ -1,7 +1,7 @@
-# HANGMAN-PYTHON
-A simple hangman game made with python and pygame by egomeister
+# Hangman Python Programm
+A simple hangman game made with python and pygame 
 
-### Requirements
+## Requirements
 ```
 Python 3.x
 pygame module
